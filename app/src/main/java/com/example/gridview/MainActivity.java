@@ -20,10 +20,9 @@ public class MainActivity extends AppCompatActivity {
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
-        String[] flowerName = {"Rose","Lotus","Lily","Jasmine",
-        "Tulip","Orchid","Levender","RoseMarry","Sunflower","Carnation"};
+        String[] flowerName = {"Cardio101","Cardio102","Cardio103","Cardio104","Cardio105","Cardio106","Cardio107","Cardio108","Cardio109"};
         int[] flowerImages = {R.drawable.a,R.drawable.b,R.drawable.c,R.drawable.d,R.drawable.e,R.drawable.f,R.drawable.g,
-                R.drawable.h,R.drawable.i,R.drawable.j};
+                R.drawable.h,R.drawable.i};
 
         GridAdapter gridAdapter = new GridAdapter(MainActivity.this,flowerName,flowerImages);
         binding.gridView.setAdapter(gridAdapter);
